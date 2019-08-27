@@ -7,7 +7,7 @@
 		$(document).click(function (e) {
 	    var container = $("#gtco-offcanvas, .js-gtco-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-	    	$('.js-gtco-nav-toggle').addClass('gtco-nav-white');
+	    	$('.js-gtco-nav-toggle').addClass('gtco-nav-white'); //class to add white color to hamburger menu
 
 	    	if ( $('body').hasClass('offcanvas') ) {
 
@@ -26,7 +26,8 @@
 	var offcanvasMenu = function() {
 
 		$('#page').prepend('<div id="gtco-offcanvas" />');
-		$('#page').prepend('<a href="#" class="js-gtco-nav-toggle gtco-nav-toggle gtco-nav-white"><i></i></a>');
+		// $('#page').prepend('<a href="#" class="js-gtco-nav-toggle gtco-nav-toggle gtco-nav-white"><i></i></a>');
+		$('#page').prepend('<a href="#" class="js-gtco-nav-toggle gtco-nav-toggle "><i></i></a>');
 		var clone1 = $('.menu-1 > ul').clone();
 		$('#gtco-offcanvas').append(clone1);
 		var clone2 = $('.menu-2 > ul').clone();
